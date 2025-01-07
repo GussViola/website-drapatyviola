@@ -69,6 +69,14 @@ export default function Home() {
           >
             Catálogo de Procedimentos
           </Link>
+          <Link
+            href="https://maps.app.goo.gl/KLn7ddjkw7B1L4dz5"
+            className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Endereço
+          </Link>
           <button
             onClick={() => setShowBiography(!showBiography)}
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
