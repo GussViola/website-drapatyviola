@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Facebook, Instagram } from "lucide-react";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export default function Home() {
   const [showBiography, setShowBiography] = useState(false);
@@ -37,6 +38,7 @@ export default function Home() {
             href="https://www.facebook.com/drapatriciaviola"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => sendGTMEvent("facebook-click")}
           >
             <Facebook
               size={24}
@@ -47,6 +49,7 @@ export default function Home() {
             href="https://www.instagram.com/drapatyviola/"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => sendGTMEvent("instagram-click")}
           >
             <Instagram
               size={24}
@@ -62,6 +65,7 @@ export default function Home() {
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => sendGTMEvent("whatsapp-click")}
           >
             Agendar Consulta
           </Link>
@@ -70,6 +74,7 @@ export default function Home() {
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => sendGTMEvent("whatsapp-catalog-click")}
           >
             Catálogo de Procedimentos
           </Link>
@@ -78,6 +83,7 @@ export default function Home() {
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => sendGTMEvent("address-click")}
           >
             Endereço
           </Link>
@@ -87,11 +93,15 @@ export default function Home() {
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => sendGTMEvent("orcamento-click")}
           >
             Faça seu orçamento de receitas
           </Link>
           <button
-            onClick={() => setShowBiography(!showBiography)}
+            onClick={() => {
+              setShowBiography(!showBiography);
+              sendGTMEvent("about-click");
+            }}
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
           >
             Sobre Mim
