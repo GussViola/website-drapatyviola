@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +11,11 @@ export default function Home() {
   return (
     // Contêiner Principal
     <div className="flex flex-col items-center justify-center min-h-screen bg-orange-50 p-4">
-      <div className={`flex flex-col items-center bg-white px-8 pt-8 rounded-lg shadow-md w-full max-w-md ${ showBiography ? "pb-8" : "pb-0"}`}>
+      <div
+        className={`flex flex-col items-center bg-white px-8 pt-8 rounded-lg shadow-md w-full max-w-md ${
+          showBiography ? "pb-8" : "pb-0"
+        }`}
+      >
         {/* Seção de Perfil */}
         <div className="flex flex-col items-center">
           <Image
@@ -77,6 +81,15 @@ export default function Home() {
           >
             Endereço
           </Link>
+
+          <Link
+            href="https://www.boticaviola.com.br/solicitar-orcamento"
+            className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Faça seu orçamento de receitas
+          </Link>
           <button
             onClick={() => setShowBiography(!showBiography)}
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
@@ -88,12 +101,18 @@ export default function Home() {
         {/* Seção de Biografia */}
         <div
           className={`mt-8 bg-white rounded-lg shadow-md w-full max-w-md transition-all duration-500 ease-in-out ${
-            showBiography ? "opacity-100 max-h-full p-4" : "opacity-0 max-h-0 overflow-hidden p-0"
+            showBiography
+              ? "opacity-100 max-h-full p-4"
+              : "opacity-0 max-h-0 overflow-hidden p-0"
           }`}
         >
           <h2 className="text-xl font-bold text-gray-800 mb-2">Biografia</h2>
           <p className="text-gray-600">
-            A Dra. Paty Viola é uma farmacêutica renomada, especialista em procedimentos estéticos como o Botox®. Com anos de experiência no setor, ela se dedica a proporcionar o melhor cuidado e resultados excepcionais para seus pacientes. Sua abordagem personalizada e atenção aos detalhes fazem dela uma referência na área.
+            A Dra. Paty Viola é uma farmacêutica renomada, especialista em
+            procedimentos estéticos como o Botox®. Com anos de experiência no
+            setor, ela se dedica a proporcionar o melhor cuidado e resultados
+            excepcionais para seus pacientes. Sua abordagem personalizada e
+            atenção aos detalhes fazem dela uma referência na área.
           </p>
         </div>
       </div>
