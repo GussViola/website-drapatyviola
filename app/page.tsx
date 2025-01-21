@@ -39,7 +39,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="facebook-link"
-            onClick={() => sendGTMEvent("facebook-click")}
+            onClick={() => sendGTMEvent("facebook-click", "drapatriciaviola")}
           >
             <Facebook
               size={24}
@@ -51,7 +51,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="instagram-link"
-            onClick={() => sendGTMEvent("instagram-click")}
+            onClick={() => sendGTMEvent("instagram-click", "drapatriciaviola")}
           >
             <Instagram
               size={24}
@@ -68,7 +68,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="whatsapp-link"
-            onClick={() => sendGTMEvent("whatsapp-click")}
+            onClick={() => sendGTMEvent("whatsapp-click", "drapatriciaviola")}
           >
             Agendar Consulta
           </Link>
@@ -78,7 +78,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="whatsapp-catalog-link"
-            onClick={() => sendGTMEvent("whatsapp-catalog-click")}
+            onClick={() => sendGTMEvent("whatsapp-catalog-click", "drapatriciaviola")}
           >
             Catálogo de Procedimentos
           </Link>
@@ -88,7 +88,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="address-link"
-            onClick={() => sendGTMEvent("address-click")}
+            onClick={() => sendGTMEvent("address-click", "drapatriciaviola")}
           >
             Endereço
           </Link>
@@ -99,14 +99,14 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="orcamento-link"
-            onClick={() => sendGTMEvent("orcamento-click")}
+            onClick={() => sendGTMEvent("orcamento-click", "drapatriciaviola")}
           >
             Faça seu orçamento de receitas
           </Link>
           <button
             onClick={() => {
               setShowBiography(!showBiography);
-              sendGTMEvent("about-click");
+              sendGTMEvent("about-click", "drapatriciaviola");
             }}
             id="about-link"
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
