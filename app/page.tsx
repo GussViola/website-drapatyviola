@@ -38,6 +38,7 @@ export default function Home() {
             href="https://www.facebook.com/drapatriciaviola"
             target="_blank"
             rel="noopener noreferrer"
+            id="facebook-link"
             onClick={() => sendGTMEvent("facebook-click")}
           >
             <Facebook
@@ -49,6 +50,7 @@ export default function Home() {
             href="https://www.instagram.com/drapatyviola/"
             target="_blank"
             rel="noopener noreferrer"
+            id="instagram-link"
             onClick={() => sendGTMEvent("instagram-click")}
           >
             <Instagram
@@ -65,6 +67,7 @@ export default function Home() {
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
             target="_blank"
             rel="noopener noreferrer"
+            id="whatsapp-link"
             onClick={() => sendGTMEvent("whatsapp-click")}
           >
             Agendar Consulta
@@ -74,6 +77,7 @@ export default function Home() {
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
             target="_blank"
             rel="noopener noreferrer"
+            id="whatsapp-catalog-link"
             onClick={() => sendGTMEvent("whatsapp-catalog-click")}
           >
             Catálogo de Procedimentos
@@ -83,6 +87,7 @@ export default function Home() {
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
             target="_blank"
             rel="noopener noreferrer"
+            id="address-link"
             onClick={() => sendGTMEvent("address-click")}
           >
             Endereço
@@ -93,6 +98,7 @@ export default function Home() {
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
             target="_blank"
             rel="noopener noreferrer"
+            id="orcamento-link"
             onClick={() => sendGTMEvent("orcamento-click")}
           >
             Faça seu orçamento de receitas
@@ -102,6 +108,7 @@ export default function Home() {
               setShowBiography(!showBiography);
               sendGTMEvent("about-click");
             }}
+            id="about-link"
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
           >
             Sobre Mim
