@@ -39,7 +39,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="facebook-link"
-            onClick={() => sendGTMEvent("facebook-click", "drapatriciaviola")}
+            onClick={() =>
+              sendGTMEvent({
+                event: "facebook-click",
+                label: "drapatriciaviola",
+              })
+            }
           >
             <Facebook
               size={24}
@@ -51,7 +56,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="instagram-link"
-            onClick={() => sendGTMEvent("instagram-click", "drapatriciaviola")}
+            onClick={() =>
+              sendGTMEvent({
+                event: "instagram-click",
+                label: "drapatriciaviola",
+              })
+            }
           >
             <Instagram
               size={24}
@@ -68,7 +78,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="whatsapp-link"
-            onClick={() => sendGTMEvent("whatsapp-click", "drapatriciaviola")}
+            onClick={() =>
+              sendGTMEvent({
+                event: "whatsapp-click",
+                label: "drapatriciaviola",
+              })
+            }
           >
             Agendar Consulta
           </Link>
@@ -78,7 +93,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="whatsapp-catalog-link"
-            onClick={() => sendGTMEvent("whatsapp-catalog-click", "drapatriciaviola")}
+            onClick={() =>
+              sendGTMEvent({
+                event: "whatsapp-catalog-click",
+                label: "drapatriciaviola",
+              })
+            }
           >
             Catálogo de Procedimentos
           </Link>
@@ -88,7 +108,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="address-link"
-            onClick={() => sendGTMEvent("address-click", "drapatriciaviola")}
+            onClick={() =>
+              sendGTMEvent({
+                event: "address-click",
+                label: "drapatriciaviola",
+              })
+            }
           >
             Endereço
           </Link>
@@ -99,14 +124,22 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             id="orcamento-link"
-            onClick={() => sendGTMEvent("orcamento-click", "drapatriciaviola")}
+            onClick={() =>
+              sendGTMEvent({
+                event: "orcamento-click",
+                label: "drapatriciaviola",
+              })
+            }
           >
             Faça seu orçamento de receitas
           </Link>
           <button
             onClick={() => {
               setShowBiography(!showBiography);
-              sendGTMEvent("about-click", "drapatriciaviola");
+              sendGTMEvent({
+                event: "about-click",
+                label: "drapatriciaviola",
+              });
             }}
             id="about-link"
             className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
