@@ -173,7 +173,7 @@ export default function Home() {
             <strong>Dra. Paty Viola</strong> é farmacêutica bioquímica (
             <strong>CRF 73291</strong>), especialista em{" "}
             <strong>Farmácia Estética</strong>,{" "}
-            <strong>Farmácia Clínica</strong> e
+            <strong>Farmácia Clínica</strong> e{" "}
             <strong>Prescrição Farmacêutica</strong>. Com mais de{" "}
             <strong>10 anos de experiência clínica</strong>, dedica-se a
             transformar a beleza e a autoestima de seus pacientes por meio de{" "}
