@@ -118,21 +118,6 @@ export default function Home() {
             Endereço
           </Link>
 
-          <Link
-            href="https://www.boticaviola.com.br/solicitar-orcamento"
-            className="bg-orange-700 text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-800 hover:shadow-lg"
-            target="_blank"
-            rel="noopener noreferrer"
-            id="orcamento-link"
-            onClick={() =>
-              sendGTMEvent({
-                event: "orcamento-click",
-                label: "drapatriciaviola",
-              })
-            }
-          >
-            Faça seu orçamento de receitas
-          </Link>
           <button
             onClick={() => {
               setShowBiography(!showBiography);
@@ -146,23 +131,74 @@ export default function Home() {
           >
             Sobre Mim
           </button>
+          <div className="flex flex-col gap-4 p-2 border-2 border-[#de6a2c] rounded-lg">
+            <div className="flex bg-slate-100 rounded-lg px-4 py-2 align-center items-center justify-center">
+              <Image
+                className="self-center"
+                src="/Botica-Icon-Horizontal-Bigger.svg"
+                alt="Farmácia"
+                width={150}
+                height={150}
+              />
+            </div>
+            <Link
+              href="https://www.boticaviola.com.br/solicitar-orcamento"
+              className="bg-[#de6a2c] text-white py-3 rounded-lg text-center font-semibold transition duration-200 hover:bg-orange-600 hover:shadow-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="orcamento-link"
+              onClick={() =>
+                sendGTMEvent({
+                  event: "orcamento-click",
+                  label: "drapatriciaviola",
+                })
+              }
+            >
+              Faça seu orçamento na Botica Viola
+            </Link>
+          </div>
         </div>
-
         {/* Seção de Biografia */}
         <div
           className={`mt-8 bg-white rounded-lg shadow-md w-full max-w-md transition-all duration-500 ease-in-out ${
             showBiography
-              ? "opacity-100 max-h-full p-4"
+              ? "opacity-100 max-h-full p-6"
               : "opacity-0 max-h-0 overflow-hidden p-0"
           }`}
         >
-          <h2 className="text-xl font-bold text-gray-800 mb-2">Biografia</h2>
-          <p className="text-gray-600">
-            A Dra. Paty Viola é uma farmacêutica renomada, especialista em
-            procedimentos estéticos como o Botox®. Com anos de experiência no
-            setor, ela se dedica a proporcionar o melhor cuidado e resultados
-            excepcionais para seus pacientes. Sua abordagem personalizada e
-            atenção aos detalhes fazem dela uma referência na área.
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+            Quem é a Dra. Paty Viola?
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            <strong>Dra. Paty Viola</strong> é farmacêutica bioquímica (
+            <strong>CRF 73291</strong>), especialista em{" "}
+            <strong>Farmácia Estética</strong>,{" "}
+            <strong>Farmácia Clínica</strong> e
+            <strong>Prescrição Farmacêutica</strong>. Com mais de{" "}
+            <strong>10 anos de experiência clínica</strong>, dedica-se a
+            transformar a beleza e a autoestima de seus pacientes por meio de{" "}
+            <strong>procedimentos injetáveis</strong> e{" "}
+            <strong>terapias tecnológicas avançadas</strong>.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mt-3">
+            Reconhecida por sua expertise em <strong>Botox Full Face</strong> e
+            protocolos personalizados, a Dra. Paty lidera a{" "}
+            <strong>Clínica Dra. Paty Viola</strong>, um espaço onde ciência,
+            inovação e atendimento humanizado se unem para oferecer tratamentos
+            de excelência.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mt-3">
+            Além disso, está à frente da <strong>Botica Viola</strong>, onde
+            desenvolve fórmulas manipuladas exclusivas para potencializar os
+            tratamentos estéticos e clínicos. Se você busca um atendimento
+            seguro, moderno e personalizado, sua melhor versão começa aqui.
+          </p>
+
+          <p className="text-gray-700 font-medium mt-4">
+            <strong>Agende sua consulta</strong> e descubra como a Dra. Paty
+            Viola pode transformar sua beleza com segurança e excelência.
           </p>
         </div>
       </div>
