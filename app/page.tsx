@@ -29,7 +29,7 @@ export default function Home() {
           <h1 className="mt-4 text-2xl font-bold text-gray-800">
             Dra. Paty Viola
           </h1>
-          <p className="text-gray-600">Farmacêutica Especialista em Botox®</p>
+          <p className="text-gray-600">Farmacêutica Especialista em Procedimentos Estéticos</p>
         </div>
 
         {/* Seção de Ícones Sociais */}
@@ -182,7 +182,7 @@ export default function Home() {
           </p>
 
           <p className="text-gray-700 leading-relaxed mt-3">
-            Reconhecida por sua expertise em <strong>Botox Full Face</strong> e
+            Reconhecida por sua expertise em <strong>tratamentos faciais</strong> e
             protocolos personalizados, a Dra. Paty lidera a{" "}
             <strong>Clínica Dra. Paty Viola</strong>, um espaço onde ciência,
             inovação e atendimento humanizado se unem para oferecer tratamentos

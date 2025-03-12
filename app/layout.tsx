@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Clínica Dra. Paty Viola",
-  description: "Farmacêutica Especialista em Botox®",
+  description: "Farmacêutica Especialista em Procedimentos Estéticos",
 };
 
 export default function RootLayout({
