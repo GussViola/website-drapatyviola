@@ -10,6 +10,16 @@ export function HeroSection() {
 
   return (
     <section className="relative pt-20 pb-24 md:pt-32 md:pb-32 flex flex-col items-center justify-center bg-orange-50 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/slides/IMG_6125.jpg"
+          alt="Fundo Dra. Paty Viola"
+          fill
+          className="object-cover opacity-40 blur-[4px] scale-105"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-orange-50/90" />
+      </div>
       <div className="container px-4 md:px-6 relative z-10 flex flex-col items-center text-center">
         <div className="mb-8 w-32 h-32 md:w-40 md:h-40 relative rounded-full overflow-hidden border-4 border-white shadow-lg">
           <Image

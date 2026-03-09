@@ -4,7 +4,7 @@ export const landingData = {
     subtitle:
       "Dra. Paty Viola - Especialista em Farmácia Estética e Saúde Integrativa",
     ctaPrimary: {
-      label: "Agendar Avaliação",
+      label: "Agendar Avaliação Gratuita",
       href: "https://api.whatsapp.com/send/?phone=5519996698398&app_absent=0",
     },
     ctaSecondary: {
@@ -30,7 +30,7 @@ export const landingData = {
   services: {
     title: "Nossos Procedimentos",
     items: [
-      "Toxina Botulínica",
+      "Botox",
       "Preenchimento Facial",
       "PEIM - Microvasos",
       "Limpeza de Pele Revitalizante",
@@ -38,7 +38,6 @@ export const landingData = {
       "Tecnologias Avançadas",
       "Microagulhamento - Permeação de Ativos",
       "Consulta Clínica - Dra Paty Viola",
-      "Psicologia Clínica - Dr Alexandre Chaves",
       "Bioestimulador de Colágeno",
       "Injetáveis Intradermoterapia . Intramuscular",
       "Terapia Capilar",
@@ -122,11 +121,10 @@ export const landingData = {
   finalCta: {
     title: "Agende sua avaliação gratuita de 30 minutos",
     subtitle: "Atendimento presencial focado nas suas necessidades",
-    label: "Agendar Avaliação",
+    label: "Agendar Avaliação Gratuita",
     href: "https://api.whatsapp.com/send/?phone=5519996698398&app_absent=0",
   },
   boticaViola: {
-    title: "Botica Viola",
     description:
       "Dra. Paty Viola também está à frente da Botica Viola, nossa farmácia de manipulação. Desenvolvemos fórmulas exclusivas e personalizadas para potencializar seus tratamentos estéticos e clínicos, com máxima qualidade e segurança.",
     ctaLabel: "Solicitar orçamento na Botica Viola",
