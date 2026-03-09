@@ -17,13 +17,13 @@ export default function Home() {
       <TrustBarSection />
       <AboutSection />
       <ServicesSection />
+      <BoticaViolaSection />
       <GallerySection />
       <IntermediateCtaSection />
       <LocationAndHoursSection />
       <SocialsSection />
       <FAQSection />
       <FinalCtaSection />
-      <BoticaViolaSection />
     </main>
   );
 }
